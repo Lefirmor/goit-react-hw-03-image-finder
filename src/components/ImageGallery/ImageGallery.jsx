@@ -9,8 +9,8 @@ import Notiflix from 'notiflix';
 export const ImageGallery = ({ totalHits, images, loader, onNextPage }) => {
   return (
     <>
-      {totalHits === 0 && Notiflix.Notify.failure('asd')}
-
+      {totalHits === 0 && Notiflix.Notify.failure('No images found')}
+     
       {images && (
         <ImageGalleryList>
           {images.map(image => (
@@ -23,7 +23,7 @@ export const ImageGallery = ({ totalHits, images, loader, onNextPage }) => {
           ))}
         </ImageGalleryList>
       )}
-
+     
       {loader && <Loader />}
 
       {totalHits > images.length && <Button onClick={onNextPage} />}
