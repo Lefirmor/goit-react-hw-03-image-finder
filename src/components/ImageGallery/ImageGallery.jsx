@@ -3,7 +3,7 @@ import { ImageGalleryItem } from 'components/ImageGalleryItem/ImageGalleryItem';
 import { ImageGalleryList } from './ImageGallery.styled';
 import { Loader } from 'components/Loader/Loader';
 import { Button } from 'components/Button/Button';
-// import { ErrorMessage } from 'components/ErrorMessage/ErrorMessage';
+
 import Notiflix from 'notiflix';
 
 export const ImageGallery = ({ totalHits, images, loader, onNextPage }) => {
